@@ -1,2 +1,4 @@
-JoomlaComponentCreator
-======================
+Joomla Component Creator
+========================
+
+
