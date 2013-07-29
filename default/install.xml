@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="%joomla_version%">
+	<name>%name%</name>
+	<creationDate>%date_creation%</creationDate>
+	<author>%author%</author>
+	<authorEmail>%author_email%</authorEmail>
+	<authorUrl>%author_site%</authorUrl>
+	<copyright>%copyright%</copyright>
+	<license>%license%</license>
+	<version>%version%</version>
+	<description>%description%</description>
+	
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>hello.php</filename>
+		<filename>index.html</filename>
+		<filename>models/hello.php</filename>
+		<filename>views/hello/index.html</filename>
+		<filename>views/hello/view.html.php</filename>
+		<filename>views/hello/tmpl/index.html</filename>
+		<filename>views/hello/tmpl/default.php</filename>
+		<filename>views/index.html</filename>
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>	
+
+	<administration>
+		<menu>%menu_admin%</menu>
+		
+		<files folder="admin">
+			<filename>hello.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>controller.php</filename>
+			<filename>controllers/hello.php</filename>
+			<filename>controllers/index.html</filename>
+			<filename>models/hellos.php</filename>
+			<filename>models/hello.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/hello.php</filename>
+			<filename>tables/index.html</filename>
+			<filename>views/hello/view.html.php</filename>
+			<filename>views/hello/tmpl/form.php</filename>
+			<filename>views/hello/index.html</filename>
+			<filename>views/hello/tmpl/index.html</filename>
+			<filename>views/hellos/view.html.php</filename>
+			<filename>views/hellos/index.html</filename>
+			<filename>views/hellos/tmpl/default.php</filename>
+			<filename>views/hellos/tmpl/index.html</filename>
+		</files>		
+	</administration>
+</install>
